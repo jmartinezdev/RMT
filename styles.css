@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
+  list-style: none;
   font-family: "Roboto", sans-serif;
 }
 
@@ -11,7 +12,7 @@
   justify-content: space-between;
   align-items: center;
   text-align: center;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255);
 }
 
 .header-container img {
@@ -46,7 +47,7 @@ a::before {
   left: -10px;
   width: 3px;
   height: 100%;
-  background-color: white;
+  background-color: grey;
   z-index: -1;
   transition: all 0.5s;
 }
@@ -94,11 +95,11 @@ a:active:before {
 }
 
 #myVideo {
-  position: fixed;
+  position: absolute;
   left: 0;
   right: 0;
   bottom: 0;
-  top: 0;
+  top: 100px;
   width: 100vw;
   height: 100vh;
   object-fit: cover;
@@ -109,8 +110,8 @@ a:active:before {
   background-color: white;
   display: flex;
   padding: 5% 10% 0 10%;
-  text-align: center;
-  justify-content: center;
+  text-align:start;
+  justify-content: flex-start;
 }
 
 #about-us h2 {
@@ -120,17 +121,16 @@ a:active:before {
 #about-us p {
   font-size: 20px;
   font-weight: lighter;
-  margin: 30px;
-  padding-left: 20%;
-  padding-right: 20%;
   text-align: justify;
 }
 
-.list {
-  list-style: inside;
-  text-align: start;
-  margin-left: 40%;
-  margin-top: 30px;
+.about-us {
+    width: 50%;
+    margin-right: 50px;
+}
+
+.about-us-right{
+    width: 50%;
 }
 
 #contact {
