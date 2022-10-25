@@ -100,7 +100,7 @@ a:active:before {
   right: 0;
   bottom: 0;
   top: 100px;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   object-fit: cover;
   z-index: -1;
@@ -109,19 +109,22 @@ a:active:before {
 #about-us {
   background-color: white;
   display: flex;
-  padding: 5% 10% 0 10%;
+  padding: 100px;
   text-align:start;
   justify-content: flex-start;
+  align-items: center;
 }
 
 #about-us h2 {
-  font-size: 38px;
+  font-size: 62px;
+  margin-bottom: 50px;
 }
 
 #about-us p {
   font-size: 20px;
   font-weight: lighter;
   text-align: justify;
+  line-height: 40px;
 }
 
 .about-us {
@@ -131,23 +134,77 @@ a:active:before {
 
 .about-us-right{
     width: 50%;
+    align-items: center;
+    justify-content: center;
 }
 
-#contact {
+#services{
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-bottom: 100px;
+}
+
+#services h3{
+  font-size: 62px;
+  text-align: center;
+  margin-top: 80px;
+}
+
+#services h5{
+  font-size: 22px;
+  text-align: center;
+  justify-content: center;
+  font-weight: lighter;
+  margin: 50px;
+}
+
+.services{
   display: flex;
-  justify-content: space-around;
+  flex-direction: row;
+  justify-content:space-around;
+  align-items: center;
+}
+
+.services-left , .services-right{
+  font-size: 18px;
+  font-weight: lighter;
+  line-height: 30px;
+  text-align:justify ;
+  justify-content: flex-start;
+  align-items: flex-start; 
+}
+
+.services-right ul{
+  margin-top: 30px;
+  font-size: 16px;
+}
+
+.services-right{
+  width: 50%;
+}
+
+.services-left {
+  margin-top: 50px;
+  margin-right: 50px;
+}
+
+.services-left img{
+  height: auto;
+  max-width: 100%;
+}
+
+#contact h3{
+  text-align: center;
+  font-size: 62px;
+}
+
+.contact {
+  display: flex;
+  flex-direction: row;
+  justify-content:space-around;
   padding-bottom: 60px;
   padding-top: 60px;
   background-color: white;
-}
-
-.contact-first {
-  max-width: 20%;
-  padding: 10px;
-}
-
-.contact-first h1 {
-  margin-bottom: 15px;
 }
 
 .contact-right {
@@ -156,10 +213,14 @@ a:active:before {
   gap: 15px;
 }
 
+.contact-right span{
+  font-weight: lighter;
+}
+
 .form-container {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 15px;  
 }
 
 .input {
@@ -227,4 +288,44 @@ a:active:before {
     rgba(215, 215, 215, 1) 0%,
     rgba(255, 255, 255, 1) 100%
   );
+}
+
+.thanks{
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+
+.thanks-bg{
+  position:static;
+  width: 100vw;
+  height: 100vh;
+  opacity: 0.5;
+}
+
+.thanks-content{
+  display: flex;
+  position:absolute;
+}
+
+.thanks-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-color: #fff;
+  border-radius: 10%;
+  height: 600px;
+  width: 500px;
+  align-items: center;
+  text-align: center;
+  padding: 50px;
+  box-shadow: 13px 7px 39px 0px rgba(0,0,0,0.78);
+  -webkit-box-shadow: 13px 7px 39px 0px rgba(0,0,0,0.78);
+  -moz-box-shadow: 13px 7px 39px 0px rgba(0,0,0,0.78);
+  background-image: url(/img/logo_RMT-removebg-preview.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top;
 }
