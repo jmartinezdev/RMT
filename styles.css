@@ -344,3 +344,142 @@ a:active:before {
   background-size: contain;
   background-position: top;
 }
+
+
+@media  (max-width: 576px) {
+
+  .hero-left h1 {
+    margin-top: 170px;
+    font-size: 56px;
+    color: white;
+    text-shadow: 1px 1px 2px #000;
+    font-weight: bold;
+  }
+
+  .hero-left {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 5px;
+    width: 100%;
+  }
+
+  .hero-left p {
+    font-size: 20px;
+    text-align: justify;
+    font-weight: lighter;
+    line-height: 40px;
+    margin-bottom: 5%;
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+    color: white;
+    text-shadow: 1px 1px 2px #000;
+  }
+
+  #about-us {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    text-align:start;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .about-us {
+    width: 80%;
+    margin: 10px;
+}
+
+#services{
+  margin:10px
+}
+
+#services h3{
+  font-size: 62px;
+  text-align: center;
+  margin-top: 80px;
+  text-decoration: underline solid;
+}
+
+#services h5{
+  font-size: 22px;
+  text-align: center;
+  justify-content: center;
+  font-weight: lighter;
+  margin: 50px;
+}
+
+.services{
+  display: flex;
+  flex-direction: column;
+  justify-content:space-around;
+  align-items: center;
+}
+
+.services-left , .services-right{
+  font-size: 18px;
+  font-weight: lighter;
+  line-height: 30px;
+  text-align:justify ;
+  justify-content: flex-start;
+  align-items: flex-start; 
+}
+
+.services-right ul{
+  margin-top: 30px;
+  font-size: 16px;
+}
+
+.services-right{
+  margin-top: 15px;
+  width: 80%;
+}
+
+.services-left {
+  margin-top: 20px;
+  margin-right: 10px;
+}
+
+.services-left img{
+  height: auto;
+  max-width: 100%;
+}
+
+#contact h3{
+  margin-top: 20px;
+  text-align: center;
+  font-size:42px;
+  text-decoration: underline solid;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  padding-bottom: 40px;
+  padding-top: 40px;
+  background-color: white;
+}
+
+.contact-right {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-right span{
+  font-weight: lighter;
+}
+
+.form-container {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;  
+}
+
+
+}
